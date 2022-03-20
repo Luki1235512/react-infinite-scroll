@@ -43,7 +43,7 @@ export default function InfiniteScrollComponent() {
     })
 
 
-    if (networkStatus === NetworkStatus.loading) return "Loading..."
+    if (networkStatus === NetworkStatus.loading) return <div>"Loading..."</div>
     if (error) return <pre>{error.message}</pre>
 
 
